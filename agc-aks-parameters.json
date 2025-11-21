@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "westus"
+    },
+    "aksClusterName": {
+      "value": "aks-agc-demo"
+    },
+    "kubernetesVersion": {
+      "value": "1.31.13"
+    },
+    "nodeCount": {
+      "value": 3
+    },
+    "nodeVMSize": {
+      "value": "Standard_DS2_v2"
+    },
+    "vnetName": {
+      "value": "vnet-aks-agc"
+    },
+    "vnetAddressPrefix": {
+      "value": "10.0.0.0/16"
+    },
+    "aksSubnetName": {
+      "value": "subnet-aks"
+    },
+    "aksSubnetPrefix": {
+      "value": "10.0.1.0/24"
+    },
+    "appGwSubnetName": {
+      "value": "subnet-appgw"
+    },
+    "appGwSubnetPrefix": {
+      "value": "10.0.2.0/24"
+    },
+    "applicationGatewayName": {
+      "value": "appgw-containers"
+    },
+    "publicIpName": {
+      "value": "pip-appgw"
+    },
+    "enableAlb": {
+      "value": true
+    }
+  }
+}
